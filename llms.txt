@@ -1,0 +1,8 @@
+# JP Format Bench
+
+> 125 deterministic questions testing whether an AI handles Japanese era dates (wareki), national holidays 2025-2026, business days, Corporate Number check digits and NFKC width normalization. Answers are computed by code (Python stdlib). MIT.
+
+- data/jp_format_bench_v1.jsonl: the questions and answers (fields: id, category, question_en, question_ja, answer, answer_format, version)
+- jpfb/rules.py: the rules that compute each answer
+- jpfb/prompt.py: prints the questions as a prompt
+- jpfb/score.py: scores a JSON Lines answers file ({"id","answer"})
